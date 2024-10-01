@@ -1,0 +1,15 @@
+<h1>Todo List</h1>
+
+<!-- Lista de alunos -->
+<ul>
+  {% for aluno in lista_alunos %}
+    <li>{{ aluno }}</li>
+  {% endfor %}
+</ul>
+
+<!-- Lista de tarefas (quando for buscar do banco de dados) -->
+<ul>
+  {% for todo in todos %}
+    <li>{{ todo.title }}</li>
+  {% endfor %}
+</ul>
